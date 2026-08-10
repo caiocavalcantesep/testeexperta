@@ -1,0 +1,138 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-logo {
+  flex-shrink: 0;
+}
+
+.logo-placeholder {
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  min-width: 120px;
+  text-align: center;
+}
+
+.header-nav {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+}
+
+.nav-link {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  padding: 8px 0;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+.header-cta {
+  padding: 10px 20px;
+  background: white;
+  color: #1e40af;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s;
+}
+
+.header-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.mobile-nav-link {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  padding: 12px 0;
+}
+
+.mobile-cta-button {
+  padding: 12px 20px;
+  background: white;
+  color: #1e40af;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  .mobile-hidden {
+    display: none !important;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .header-container {
+    gap: 1rem;
+  }
+
+  .header-nav {
+    gap: 1rem;
+  }
+}
