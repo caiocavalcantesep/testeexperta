@@ -1,0 +1,138 @@
+.como-participar-section {
+  padding: 4rem 1.5rem;
+  background: #f9fafb;
+}
+
+.como-participar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #6b7280;
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+
+.etapas-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.etapa {
+  flex: 1;
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.etapa-numero {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.etapa-titulo {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.etapa-descricao {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.etapa-seta {
+  font-size: 32px;
+  font-weight: 300;
+  position: absolute;
+  right: -20px;
+  z-index: 1;
+}
+
+.etapa-seta:last-child {
+  display: none;
+}
+
+.etapas-aviso {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(30, 64, 175, 0.08);
+  border-left: 4px solid #1e40af;
+  border-radius: 4px;
+  margin-top: 2rem;
+}
+
+.etapas-aviso p {
+  font-size: 14px;
+  color: #1f2937;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .etapas-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .etapa {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .etapa-seta {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .como-participar-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .etapas-container {
+    flex-direction: column;
+  }
+
+  .etapa {
+    width: 100%;
+  }
+}
